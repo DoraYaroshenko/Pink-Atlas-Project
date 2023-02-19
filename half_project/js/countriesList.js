@@ -2,7 +2,7 @@ import CountryClass from "./countryClass.js";
 
 export const doApi = async (req) => {
     try {
-        document.querySelector("#map_id").src = "";
+        document.querySelector("#id_map").src = "";
         document.querySelector("#id_parent").innerHTML = `<h2 class="display-2 mt-5 pt-5">Loading <i class="fa fa-spinner" aria-hidden="true"></i></h2>`;
         let url = `https://restcountries.com/v3.1/name/${req}/?fullText=true`;
         let resp = await fetch(url);
@@ -18,7 +18,7 @@ const createCountry = (data) => {
     let country = new CountryClass("#id_parent", data, searchBorder);
     document.querySelector("#id_parent").innerHTML = "";
     country.render();
-    document.querySelector("#map_id").src = `https://maps.google.com/maps?q=${data.latlng[0]},${data.latlng[1]}&z=5&ie=UTF8&iwloc=&output=embed`;
+    document.querySelector("#id_map").src = `https://maps.google.com/maps?q=${data.latlng[0]},${data.latlng[1]}&z=5&ie=UTF8&iwloc=&output=embed`;
 }
 
 export const searchCountry = () => {
