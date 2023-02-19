@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(254, 229, 254);
+}
+header{
+    box-shadow: 0px 10px 13px -7px #b193ae, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+header .container .row .icon{
+font-size: 1.7em;
+color:  rgb(224, 49, 224);
+}
+main{
+min-height: 100vh;
+}
+
+footer{
+    background-color: rgb(224, 49, 224);
+}
