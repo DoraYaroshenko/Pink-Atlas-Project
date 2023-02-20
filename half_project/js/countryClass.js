@@ -4,7 +4,7 @@ export default class CountryClass {
         this.name = _item.name.common;
         this.flag = _item.flags.png;
         this.capital = _item.capital;
-        this.pop = _item.population;
+        this.pop = _item.population.toLocaleString();
         this.region = _item.region;
         this.lang = _item.languages;
         this.currency = _item.currencies;
